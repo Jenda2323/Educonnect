@@ -1,0 +1,70 @@
+﻿@using SchoolWebApp6_24.ViewModels
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+
+<p>For initial login, please use the following credentials:</p>
+
+<div>
+    <a href="#" id="showCredentials">Click here to view instruction and initial login credentials</a>
+    <div id="credentialsInfo" style="display: none;">
+        <div class="alert alert-info">
+            <h2>Help - Introduction &amp; How to use this app</h2>
+            <p>
+                EduConnect is a simple web based school information system to keep track of students, school subjects and grades.
+            </p>
+            <p>
+                <ul>
+                    <li>Student(username: petr)
+                        <br />
+                        - rights to view student, subject and grade data only.
+                    </li>
+                    <li>Teacher(username: Jarmila)
+                    <br />
+                    - rights to view and edit student, subject and grade data.
+                    </li>
+                    <li>
+                        Admin(username: admin)
+                        <br />
+                        - rights to view and edit student, subject and grade data.<br />
+                        - rights to view and edit application user abd role data.                        
+                    </li>
+                </ul>
+                <p>
+
+                The password consists of the first four letters of the alphabet (with the first letter capitalised), the first four digits (starting with 1) and period at the end.
+
+                </p>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="text-danger" asp-validation-summary="All"></div>
+
+<form asp-action="Login" method="post">
+    <input type="hidden" asp-for="ReturnUrl" />
+    <div class="form-group">
+        <label asp-for="Username"></label>
+        <input asp-for="Username" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control" type="password" />
+        Remember me? <input type="checkbox" asp-for="Remember" />
+    </div>
+    <button class="btn btn-primary" type="submit">Log In</button>
+</form>
+
+@section Scripts {
+    <script>
+        $(function () {
+            $('#showCredentials').click(function () {
+                $('#credentialsInfo').toggle();
+            });
+        });
+    </script>
+}

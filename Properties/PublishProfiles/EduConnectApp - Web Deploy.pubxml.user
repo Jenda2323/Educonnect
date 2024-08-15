@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArfPCNWA8Tkm/141M7DUgWwAAAAACAAAAAAAQZgAAAAEAACAAAADPm7gxnF5nhzduDIwlAwnHaWXbdyP2G78oyxZ6tSkoSgAAAAAOgAAAAAIAACAAAABGN+o4gwgC3wjeE5NqWGmWYkIEXw2n7GSvu1kEI3cWm4AAAAAY0azQxAYGYP/D1SpE3yhW02FLvYbShpgATlf4CXar2iyjAYyjtaeGGSf+NZrw7Wo7o9nQG6h7wcbbg9h3B4LvhBtLlBcqrcVkgxBLoT/Z1h4SoIU7JakcWbqnvW0xsWuLee5lPorbmSeDZcB26oyM+8WdxnA7V+2JMLL7cccqjUAAAACUdYWzVSElYvG5+j0uYDQQ56KWYg1yttjS6BrtRxoiWmZQCECWWt5vLcgx0n5rWNbZlM/4SYGCsMkYQW8ckHAx</EncryptedPassword>
+    <History>True|2024-06-16T17:25:03.7831902Z||;True|2024-06-16T19:22:52.0315727+02:00||;True|2024-06-16T19:22:22.3585496+02:00||;True|2024-06-16T19:15:07.7224364+02:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="AzureDbConnection">
+      <Value>Server=tcp:educonnect.database.windows.net,1433%3bInitial Catalog=EduConnect%3bPersist Security Info=False%3bUser ID=Fishus%3bPassword=Wers240385%3bMultipleActiveResultSets=True%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

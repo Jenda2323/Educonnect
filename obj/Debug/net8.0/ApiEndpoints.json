@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "SchoolWebApp6_24.Controllers.API.SubjectsApiController",
+    "Method": "Index",
+    "RelativePath": "api/SubjectsApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SchoolWebApp6_24.DTO.SubjectDTO, SchoolWebApp6-24, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
